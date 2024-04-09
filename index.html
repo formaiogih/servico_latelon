@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coordenadas</title>
+    <script src="js/index.js"></script>
+    <!-- <script src="dist/bundle.js"></script> -->
+    <link rel="stylesheet" type="text/css" href="css/index.css" media="screen" />
+</head>
+<body>
+    <header>
+        <h1>Consulte a latitude e longitude de sua cidade!</h1>
+    </header>
+    
+    <form src="js/formulario.js">
+        <div id="triangulocima"></div>
+
+        <p>
+            Digite sua cidade:
+            <input class="escrever" type="text" id="cidade" name="cidade" required="required"><br>
+
+        <input id="botao" type="button" value="Qual a minha coordenada?" onclick="chamarServicoGeocodificacao()" required="required">
+
+        <article id="printresultado">
+            <p><span id="resultado"></span></p>  
+        </article>
+
+        <article>
+            <div id="triangulobaixo"></div>
+        </article>
+    </form>
+</body>
+</html>
+
+
+
+
