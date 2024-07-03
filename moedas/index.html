@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário IMC</title>
+    <script src="js/index.js"></script>
+    <!-- <script src="dist/bundle.js"></script> -->
+    <link rel="stylesheet" type="text/css" href="css/index.css" media="screen" />
+</head>
+<body>
+    <header>
+        <h1>Converta moedas!</h1>
+    </header>
+    
+    <form src="js/formulario.js">
+        <div id="triangulocima"></div>
+
+        <p>
+            Moeda a ser convertida:
+            R$ 1,00 - Real Brasileiro
+</p>
+<p>
+            Moeda após a conversão:
+</p>
+            <form>
+                <input type="radio" id="USD" name="moeda_final" value="dolar">
+                <label for="USD">Dólar</label><br>
+                <input type="radio" id="EUR" name="moeda_final" value="euro">
+                <label for="EUR">Euro</label><br>
+                <input type="radio" id="ARS" name="moeda_final" value="peso argentino">
+                <label for="ARS">Peso Argentino</label><br>
+                <input type="radio" id="JPY" name="moeda_final" value="yene japones">
+                <label for="JPY">Yene japonês</label><br>
+                <button type="button" onclick="chamarServicoMoeda()" id="botao">Obter Moeda Selecionada</button>
+                
+            </form>
+
+         <article id="printresultado">
+            <p><span id="resultado"></span></p>  
+        </article>
+
+        <article>
+            <div id="triangulobaixo"></div>
+        </article>
+    </form>
+</body>
+</html>
+
+
+
+
